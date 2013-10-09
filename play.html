@@ -1,13 +1,69 @@
 <html>
   <head>
     <title>WebLab Playground</title>
-  </head>
-    
-  <body>
-    <h1>Messing around with Functions!</h1>
-    
-    <script src="./function.js"></script>
+		
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.css"/>
+  </head> 
+	
+	<body> 
+	<!--Boostrap Navigation Bar-->
+		<nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebLab Function Playground</a>
+      </div>
+    </nav>
+	
+	
+	    <div class="container">
+      <div class="row">
+      <div class="col-offset-1 col-lg-9">
+		
+		<h1>Reverse String</h1>
+					
+		<form role="form">				
+			<div class="form-group">
+			<p class="text-danger"><label>Input String</label></p>
+				<input type="text" class="form-control" id="reverse-input" placeholder="Type Your Word Here!">		
+			</div>
+					
+			<div class="form-group">
+				<label>Results</label>
+					<input type="text" class="form-control" id="reverse-output" disabled>
+			</div>
+						
+			<button class="execute-reverse-string btn btn-success">Reverse</button>				<button class="reset-reverse-string btn btn-danger">Reset</button>			</form>
+				
+				<a href="#" class="execute-reverse-string"><font color="red">This Also Triggers The Reverse</font></a>				
+		
+
+		
+		<h1>Filter String Length</h1>
+		
+        <form class="form-inline" role="form">
+  				<div class="form-group">
+              <input type="text" class="form-control" id="new-filter-string" placeholder="Add String">
+
+            </div>
+  			       <div class="form-group">
+              <input type="number" class="form-control" id="filter-length" placeholder="Length">
+                    </div>
+            <button class="add-filter-string btn btn-default">Add</button>
+
+          </form>				
+			
+          <ul class="filter-string-list">
+           </ul>
+          <button class="execute-filter-list btn btn-default">Filter</button>
+          <div class="filter-results panel panel-default"></div>
+            </div>
+        </div>
+	  </div>
+
+	
+  <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+  <script src="./bootstrap/js/bootstrap.js"></script>
+  <script src="./function.js"></script>
     
   </body>
-    
 </html>
